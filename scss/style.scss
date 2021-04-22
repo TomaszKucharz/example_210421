@@ -4,27 +4,50 @@
   box-sizing: border-box;
 }
 $main-color: rgb(255, 255, 255);
-.right.banner {
+.right_banner {
   position: absolute;
+  .chapters,
+  * {
+    color: transparent;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+
+    .btn1 {
+      position: absolute;
+      margin-top: 30px;
+      top: 130px;
+      left: 30px;
+    }
+    .btn2 {
+      position: absolute;
+      margin-top: 30px;
+      top: 230px;
+      left: 30px;
+    }
+    .btn3 {
+      position: absolute;
+      margin-top: 30px;
+      top: 330px;
+      left: 30px;
+    }
+  }
 }
 body {
   overflow: hidden;
 }
-
 .wrapper {
   height: 100vh;
   max-width: 100vw;
   display: grid;
   grid-template-columns: 100px 100px auto 200px 50px;
-  grid-template-rows: 50px 60vh 20vh;
+  grid-template-rows: 50px 80vh auto;
   background-color: $main-color;
 }
 .menu {
-  background-color: aquamarine;
   grid-area: 1/1/2/2;
 }
 .banner {
-  background-color: blueviolet;
   grid-area: 1/3/2/4;
 }
 .logo {
@@ -44,9 +67,6 @@ body {
     top: 0px;
     left: calc(100% - 50px);
     transition: 0.3s linear;
-    p {
-      color: transparent;
-    }
   }
 }
 .logo:hover {
@@ -61,22 +81,21 @@ body {
     top: 0px;
     left: calc(100% - 250px);
     background-color: rgba(27, 27, 27, 1);
-    p {
-      color: white;
-      padding: 100px 10px;
-    }
+  }
+  .chapters,
+  * {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
   }
 }
-
 .left_column {
   grid-area: 2/2/3/2;
-
   .navigation {
     margin-top: 20px;
     line-height: 60px;
     padding: 15px 25px;
     list-style: none;
-
     a {
       text-decoration: none;
       font-size: 40px;
@@ -91,13 +110,14 @@ body {
 .right_column {
   background-color: $main-color;
   grid-area: 2/4/3/5;
+  padding: 10px;
+  overflow: hidden;
   .right_text {
+    margin-top: 50px;
     font-family: roboto, sans-serif;
   }
 }
-
 .footer {
-  // background-color: rgba(0, 0, 0, 0.1);
   grid-column: 1/-1;
   display: flex;
   justify-content: space-evenly;
@@ -106,7 +126,8 @@ body {
   .infoAbout2 {
     color: rgb(34, 34, 34);
     font-size: 1rem;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     text-decoration: none;
   }
 }
