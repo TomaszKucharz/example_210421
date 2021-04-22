@@ -146,6 +146,7 @@ body {
 }
 
 .gallery {
+  background-color: lavenderblush;
   text-align: center;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
