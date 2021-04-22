@@ -20,8 +20,8 @@ body {
   display: grid;
   -ms-grid-columns: 100px 100px auto 200px 50px;
       grid-template-columns: 100px 100px auto 200px 50px;
-  -ms-grid-rows: 50px 75vh auto;
-      grid-template-rows: 50px 75vh auto;
+  -ms-grid-rows: 50px 60vh 20vh;
+      grid-template-rows: 50px 60vh 20vh;
   background-color: white;
 }
 
