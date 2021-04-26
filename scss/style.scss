@@ -56,7 +56,6 @@ body {
     position: relative;
     top: 0;
     left: 0;
-    // transition: 0.3s linear;
     z-index: 1;
   }
   p {
@@ -66,36 +65,7 @@ body {
     font-size: 1.5rem;
     z-index: 1;
   }
-  // .right_banner {
-  //   background-color: rgba(27, 27, 27, 0.7);
-  //   width: 250px;
-  //   height: 1024px;
-  //   top: 0px;
-  //   left: calc(100% - 50px);
-  //   transition: 0.3s linear;
-  // }
 }
-// .logo:hover {
-//   cursor: pointer;
-//   img {
-//     position: absolute;
-//     left: calc(100% - 250px);
-//     z-index: 1;
-//   }
-//   .right_banner {
-//     position: absolute;
-//     top: 0px;
-//     left: calc(100% - 250px);
-//     background-color: rgba(27, 27, 27, 1);
-//   }
-//   .chapters,
-//   * {
-//     color: white;
-//     font-size: 2rem;
-//     text-align: center;
-//   }
-// }
-
 .left_column {
   grid-area: 2/2/3/2;
   .navigation {
